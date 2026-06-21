@@ -1,0 +1,7 @@
+
+python -m uvicorn main:app --reload
+
+login server acrproductcatalogvijay.azurecr.io
+
+acrproductcatalogvijay
+8C06Ih9FMHAEh40dWWz9oJ3nzZZsvWm3VZ9yl6QFmxGrMS2pE7MAJQQJ99CFACGhslBEqg7NAAACAZCRmE3w

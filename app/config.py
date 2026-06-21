@@ -1,0 +1,5 @@
+DB_HOST="product-db-server.postgres.database.azure.com"
+DB_PORT="5432"
+DB_NAME="productdb"
+DB_USER="pgadmin" 
+DB_PASSWORD="Vijay@123"
