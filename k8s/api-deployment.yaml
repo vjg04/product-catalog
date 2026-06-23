@@ -25,12 +25,26 @@ spec:
 
       - name: product-api
 
-        image: acrproductcatalogvijay.azurecr.io/product-api:v1
+        image: acrproductcatalogvijay.azurecr.io/product-api:v3
 
         imagePullPolicy: Always
 
         ports:
         - containerPort: 8000
+
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 5
+
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 20
+          periodSeconds: 10
 
         env:
 
