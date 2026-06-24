@@ -31,3 +31,16 @@ def get_products():
             }
             for r in rows
         ]
+
+@app.get("/productslist")
+def get_products():
+
+    with engine.connect() as conn:
+
+        result = conn.execute(
+            text("select * from products")
+        )
+
+        rows = result.fetchall()
+
+        return [r[1] for r in rows]
