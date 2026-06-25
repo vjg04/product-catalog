@@ -25,7 +25,7 @@ spec:
 
       - name: product-api
 
-        image: acrproductcatalogvijay.azurecr.io/product-api:v3
+        image: acrproductcatalogvijay.azurecr.io/product-api:v4
 
         imagePullPolicy: Always
 
